@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Localização
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id="floating-panel">
+    <b>Onde estamos? </b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      <option value="abadiania, go">Abadiânia</option>
+      <option value="aguas lindas de goias, go">Águas Lindas de Goiás</option>
+      <option value="alto paraiso de goias, go">Alto Paraíso de Goiás</option>
+      <option value="anapolis, go">Anápolis</option>
+      <option value="caldas novas, go">Caldas Novas</option>
+      <option value="catalao, go">Catalão</option>
+      <option value="ceres, go">Ceres</option>
+      <option value="cocalzinho, go">Cocalzinho de Goiás</option>
+      <option value="crixas, go">Crixás</option>
+      <option value="faina, go">Faina</option>
+      <option value="formosa, go">Formosa</option>
+      <option value="goiania, go">Goiânia</option>
+    </select><br>
+    <b>Onde vamos? </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="abadiania, go">Abadiânia</option>
+      <option value="aguas lindas de goias, go">Águas Lindas de Goiás</option>
+      <option value="alto paraiso de goias, go">Alto Paraíso de Goiás</option>
+      <option value="anapolis, go">Anápolis</option>
+      <option value="caldas novas, go">Caldas Novas</option>
+      <option value="catalao, go">Catalão</option>
+      <option value="ceres, go">Ceres</option>
+      <option value="cocalzinho, go">Cocalzinho de Goiás</option>
+      <option value="crixas, go">Crixás</option>
+      <option value="faina, go">Faina</option>
+      <option value="formosa, go">Formosa</option>
+      <option value="goiania, go">Goiânia</option>
+    </select>
+    </div>
+    <div #map id="map"></div>
+</ion-content>
